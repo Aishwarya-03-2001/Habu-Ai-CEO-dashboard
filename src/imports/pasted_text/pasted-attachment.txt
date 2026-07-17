@@ -1,0 +1,61 @@
+```text
+Design a modern AI-powered Enterprise Operations Dashboard for Habu Technology. The dashboard should serve as the centralized operational workspace that sits on top of Odoo ERP. Odoo acts only as the backend ERP and system of record where all business data is stored, while this application becomes the intelligent workflow, monitoring, approval, and decision-making layer. The interface should not feel like a traditional ERP but like a premium executive command center that provides complete visibility into business operations, approvals, projects, production, inventory, finance, procurement, and analytics through AI-powered insights.
+
+Use a clean enterprise SaaS design inspired by modern platforms like Linear, Notion AI, Stripe Dashboard, and Microsoft Fabric while following the reference design provided. Use a soft white background (#FAFBFF), light grey borders (#E8EBF3), subtle shadows, rounded 16px cards, spacious layout, premium typography, minimal icons, and a purple primary accent (#6C63FF) with soft lavender highlights (#F4F2FF). Include light blue secondary accents and pastel success, warning, and error colors. Avoid dark themes, heavy gradients, clutter, or dense ERP-style tables. The interface should feel minimal, elegant, and highly scannable.
+
+The layout should include a collapsible left navigation with Dashboard, Operations, Production, Purchase, Inventory, Projects, Quality, Finance, Customers, Vendors, Reports, Analytics, AI Assistant, Documents, Notifications, and Settings. The top navigation should include a global search bar, current date and time, notifications, quick create button, user profile, and AI Assistant access.
+
+The main dashboard should begin with a personalized welcome section showing today's business status and an AI-generated daily business summary. This summary should automatically explain the overall health of the organization, highlight critical issues, identify bottlenecks, mention pending approvals, inventory shortages, production delays, financial updates, project risks, and recommended priorities for today.
+
+Below this, display executive KPI cards with Total Orders, Running Production, Completed Today, Purchase Orders Pending, BOM Pending, Inventory Alerts, Active Projects, Revenue, Expenses, Profit, Cash Flow, Customer Payments Pending, Vendor Payments Pending, Machine Utilization, Production Efficiency, and Quality Score. Every KPI card should include an icon, current value, trend indicator, percentage change, and mini sparkline chart.
+
+Create a dedicated Quick Actions section with large interactive cards for Create Purchase Order, Create BOM, Create Production Order, Create Work Order, Raise RFQ, Create Invoice, Add Inventory, Add Vendor, Add Customer, Assign Team, Schedule Maintenance, Generate Report, and Open AI Assistant. These should serve as shortcuts to workflows while the actual data is managed by Odoo.
+
+The dashboard should contain a powerful AI Approval Center. Every approval request must first go through AI analysis before the user can approve or reject it. Never display Approve buttons directly. Instead, each approval card should display a "Review with AI" action.
+
+The AI Approval Queue should display Purchase Orders, BOM Approvals, Vendor Approvals, Production Orders, Expense Approvals, Material Requests, Engineering Change Requests, Quality Exceptions, Invoice Approvals, Project Budget Approvals, Leave Requests, and Custom Workflow Approvals. Each card should display Request Number, Department, Requested By, Priority, Waiting Time, Requested Amount, Current Status, and Review with AI.
+
+Clicking Review with AI should open a detailed AI Approval Summary panel. The AI should automatically analyze data from Odoo ERP including historical transactions, inventory availability, production schedules, vendor history, project timelines, customer commitments, budget utilization, previous approvals, quality records, and financial impact. The AI should generate a concise executive summary explaining what the request is, why it exists, how it impacts operations, and whether action is recommended.
+
+The AI panel should contain an Executive Summary, AI Risk Analysis, AI Recommendation, Supporting Business Insights, Operational Impact Analysis, Historical Comparison, Related Transactions, and Recommended Next Steps. Show risk scores for Budget, Inventory, Vendor Reliability, Production Impact, Cash Flow, Delivery Risk, Compliance, Duplicate Requests, and Project Impact. Display confidence percentages and recommendation badges such as Recommended to Approve, Needs Review, High Risk, or Recommend Rejection.
+
+The AI should also answer contextual questions like Why should this be approved, Compare with previous approvals, Show vendor performance, Explain BOM changes, What happens if this is rejected, Show inventory impact, Show financial impact, Predict project delay, Compare vendor prices, Generate executive summary, and Explain the business reason in simple language.
+
+Only after reviewing the AI summary should users be able to Approve, Approve with Comments, Send for Revision, Reject, Escalate, Request Clarification, or Schedule Discussion.
+
+Include a live Business Activity Timeline displaying Purchase Orders Created, Vendor Registrations, Production Started, Material Received, Quality Inspections, Invoice Generated, Payments Received, Customer Orders, Project Updates, Inventory Changes, Maintenance Activities, and Approval Events with timestamps and department information.
+
+Create a Production Overview showing Running Production, Waiting for Materials, Delayed Orders, Machine Utilization, Capacity Utilization, Production Efficiency, Work Orders, QC Hold, Completed Production, and Production Bottlenecks.
+
+The Purchase Dashboard should display Purchase Orders Created, Pending Approval, Approved, Sent to Vendor, Received, Delayed Deliveries, and Purchase Spend Analysis with recent purchase activities and supplier insights.
+
+The BOM Management section should show Draft BOMs, Pending Review, Approved BOMs, Engineering Changes, Revision History, Recently Updated BOMs, and AI Suggestions for optimization.
+
+The Inventory Dashboard should display Inventory Value, Low Stock Items, Critical Stock, Out of Stock Items, Dead Stock, Fast Moving Inventory, Slow Moving Inventory, Warehouse Utilization, and Top Critical Materials requiring immediate attention.
+
+The Project Dashboard should show Active Projects, Delayed Projects, Completed Projects, Upcoming Milestones, Budget Consumption, Resource Allocation, Timeline Progress, and Project Health indicators.
+
+The Customer Dashboard should include New Enquiries, Quotations, Orders, Deliveries, Pending Invoices, Customer Follow-ups, Customer Satisfaction, and Recent Customer Activities.
+
+The Vendor Dashboard should display Vendor Ratings, Delivery Performance, Quality Ratings, Average Delivery Time, Vendor Risk Scores, Top Performing Vendors, Delayed Vendors, and Procurement Analytics.
+
+The Finance Dashboard should include Revenue, Expenses, Profit, Cash Flow, Accounts Receivable, Accounts Payable, Budget Utilization, Monthly Revenue Trend, Expense Breakdown, and Financial Health.
+
+The Quality Dashboard should include Open NCRs, Rejected Items, Passed Inspections, Pending Quality Reviews, Root Cause Analysis, CAPA Tracking, and Quality Performance Trends.
+
+Add an AI Insights section that continuously generates business recommendations from ERP data. Examples include inventory shortages, delayed purchase approvals, vendor risks, production bottlenecks, cash flow concerns, project delays, quality issues, machine maintenance reminders, unusual spending patterns, duplicate purchase requests, customer escalation risks, and opportunities for cost optimization.
+
+Include an AI Business Assistant as a floating conversational interface capable of querying the ERP using natural language. Users should be able to ask questions like "What needs my attention today?", "Summarize today's operations", "Show delayed purchase orders", "Which vendors are underperforming?", "Explain this purchase order", "Predict production delays", "Generate today's executive report", "Show pending approvals", "What inventory will run out this week?", and "Compare this vendor with previous suppliers."
+
+Provide modern analytics using clean charts including Monthly Revenue, Production Trends, Purchase Trends, Inventory Consumption, Order Completion Rate, Vendor Performance, Customer Growth, Project Progress, Cash Flow Trends, and Operational Efficiency.
+
+Include a universal search capable of searching Purchase Orders, BOMs, Vendors, Customers, Projects, Employees, Inventory Items, Production Orders, Invoices, Documents, and Approvals from a single search bar.
+
+Add a notification center grouped into Today, Yesterday, and This Week with categorized operational alerts, approval reminders, financial alerts, production updates, inventory notifications, quality issues, and customer escalations.
+
+Include a Recent Documents section showing recently viewed ERP records, BOMs, purchase orders, reports, drawings, manuals, invoices, contracts, and project documents.
+
+Include a business calendar displaying meetings, production schedules, maintenance activities, deliveries, project milestones, approval deadlines, and important operational events.
+
+The overall user experience should emphasize decision-making rather than data entry. Every section should provide clear summaries, AI-generated recommendations, contextual insights, and quick actions while Odoo remains responsible for storing and managing business data. The application should feel like a premium AI-powered business command center where users manage operations through intelligent workflows, predictive insights, and AI-assisted approvals instead of navigating multiple ERP screens.
+```
